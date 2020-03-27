@@ -7,7 +7,7 @@
 (defn is-small [age]
   (if (< age 5) (println "Sorry, too small to use calculator :(") (println "All good")))
 
-(defn can-calculate?[]
+(defn can-calculate? []
 	(println "Enter your age") 
 	(let [age (read-line)]
 	(print-message age)
