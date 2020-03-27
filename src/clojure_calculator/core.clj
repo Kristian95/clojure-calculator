@@ -2,7 +2,7 @@
   (:gen-class))
 
 (defn print-message [age] 
-	(println "You are is:  : " age))
+	(println "Your age is: " age))
 
 (defn is-small [age]
   (if (< age 5) (println "Sorry, too small to use calculator :(") (println "All good")))
