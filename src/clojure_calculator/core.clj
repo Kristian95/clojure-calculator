@@ -10,11 +10,10 @@
 (defn can-calculate?[]
 	(println "Enter your age") 
 	(let [age (read-line)]
-		(print-message age)
-		(is-small (Integer/parseInt age))))
+	(print-message age)
+	(is-small (Integer/parseInt age))))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (can-calculate?)
-  )
+  (can-calculate?))
