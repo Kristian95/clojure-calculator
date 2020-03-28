@@ -1,16 +1,16 @@
 (ns clojure-calculator.core
   (:gen-class))
 
-(defn print-message [age] 
+(defn print-age [age]
 	(println "Your age is: " age))
 
 (defn is-small [age]
   (if (< age 5) (println "Sorry, too small to use calculator :(") (println "All good")))
 
 (defn can-calculate? []
-	(println "Enter your age") 
+	(println "Enter your age")
 	(let [age (read-line)]
-	(print-message age)
+	(print-age age)
 	(is-small (Integer/parseInt age))))
 
 (defn -main
