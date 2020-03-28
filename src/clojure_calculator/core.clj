@@ -5,7 +5,7 @@
 	(println "Your age is: " age))
 
 (defn is-small [age]
-  (if (< age 5) (println "Sorry, too small to use calculator :(") (println "All good")))
+  (if (< age 5) (throw (IllegalArgumentException. "age should be 6 or higher")) (println "All good")))
 
 (defn can-calculate? []
 	(println "Enter your age")
